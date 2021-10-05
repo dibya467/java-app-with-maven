@@ -20,7 +20,7 @@ pipeline {
 
     stage('Build with Maven') {
       steps {
-        sh 'mvn test'
+        bat 'mvn test compile'
       }
     }
 
